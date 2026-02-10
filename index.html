@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kaloriberegner – realistisk vektnedgang</title>
+  <meta name="description" content="Kaloriberegner for realistisk vektnedgang. Finn vedlikehold, anbefalt kaloriinntak og estimert tempo for fettredusering.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+
+    <h1>Kaloriberegner – realistisk vektnedgang</h1>
+    <p>Finn ut hvor mange kalorier du faktisk trenger for å gå ned fett på en bærekraftig måte.</p>
+
+    <section class="calculator">
+      <input id="alder" type="number" placeholder="Alder">
+      <input id="hoyde" type="number" placeholder="Høyde (cm)">
+      <input id="vekt" type="number" placeholder="Vekt (kg)">
+      <input id="okter" type="number" placeholder="Styrkeøkter per uke">
+      <select id="aktivitet">
+        <option value="stillesittende">Stillesittende</option>
+        <option value="litt">Litt aktiv</option>
+      </select>
+      <input id="mal" type="number" placeholder="Ønsket fettap (kg)">
+      <button onclick="kalkuler()">Beregn</button>
+    </section>
+
+    <section id="resultat"></section>
+
+    <p style="margin-top:30px;font-size:0.9em;">
+      Dette er ikke medisinsk rådgivning. Resultatene er estimater.
+    </p>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
