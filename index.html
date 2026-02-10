@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Kaloriberegner – realistisk vektnedgang</title>
-  <meta name="description" content="Kaloriberegner for realistisk vektnedgang. Finn vedlikehold, anbefalt kaloriinntak og estimert tempo for fettredusering.">
+  <title>Kaloriberegner – realistisk vekttap</title>
+  <meta name="description" content="Kaloriberegner for menn og kvinner. Finn vedlikehold, anbefalt kaloriinntak og realistisk tempo for vekttap.">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,36 +13,125 @@
 <body>
   <main class="container">
 
-    <h1>Kaloriberegner – realistisk vektnedgang</h1>
-    <p>Finn ut hvor mange kalorier du faktisk trenger for å gå ned fett på en bærekraftig måte.</p>
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Kaloriberegner – realistisk vekttap</h1>
+      <p>
+        Denne kaloriberegneren er utviklet for både menn og kvinner som ønsker
+        et realistisk og bærekraftig vekttap basert på kropp, kjønn og aktivitetsnivå.
+      </p>
+    </section>
 
+    <!-- KALKULATOR -->
     <section class="calculator">
-      <select id="kjonn">
-  <option value="mann">Mann</option>
-  <option value="kvinne">Kvinne</option>
-</select>
-      <input id="alder" type="number" placeholder="Alder">
-      <input id="hoyde" type="number" placeholder="Høyde (cm)">
-      <input id="vekt" type="number" placeholder="Vekt (kg)">
-      <input id="okter" type="number" placeholder="Styrkeøkter per uke">
-      <select id="aktivitet">
-        <option value="stillesittende">Stillesittende</option>
-        <option value="litt">Litt aktiv</option>
-      </select>
-      <input id="vekttap" type="number" placeholder="Ønsket vekttap (kg)">
+      <h2>Beregn ditt daglige kaloriinntak</h2>
+
+      <div class="form-group">
+        <label for="kjonn">Kjønn</label>
+        <select id="kjonn">
+          <option value="mann">Mann</option>
+          <option value="kvinne">Kvinne</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="alder">Alder</label>
+        <input id="alder" type="number" placeholder="År">
+      </div>
+
+      <div class="form-group">
+        <label for="hoyde">Høyde</label>
+        <input id="hoyde" type="number" placeholder="cm">
+      </div>
+
+      <div class="form-group">
+        <label for="vekt">Vekt</label>
+        <input id="vekt" type="number" placeholder="kg">
+      </div>
+
+      <div class="form-group">
+        <label for="okter">Styrkeøkter per uke</label>
+        <input id="okter" type="number" min="0" max="7" placeholder="0–5">
+      </div>
+
+      <div class="form-group">
+        <label for="aktivitet">Aktivitetsnivå ellers</label>
+        <select id="aktivitet">
+          <option value="stillesittende">Stillesittende</option>
+          <option value="litt">Litt aktiv</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="vekttap">Ønsket vekttap</label>
+        <input id="vekttap" type="number" placeholder="kg">
+      </div>
+
       <button onclick="kalkuler()">Beregn</button>
     </section>
 
+    <!-- RESULTAT -->
     <section id="resultat"></section>
 
-    <p style="margin-top:30px;font-size:0.9em;">
-      Dette er ikke medisinsk rådgivning. Resultatene er estimater.
-    </p>
+    <!-- SEO-SEKSJON -->
+    <section class="seo">
+      <h2>Hvordan bruke en kaloriberegner for vekttap</h2>
+      <p>
+        En kaloriberegner gir et estimat på hvor mange kalorier kroppen trenger
+        for å opprettholde vekten, og hvilket inntak som kan gi et realistisk
+        vekttap over tid. Tallene bør brukes som veiledning, og justeres basert
+        på faktisk fremgang.
+      </p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <h2>Ofte stilte spørsmål om kaloriberegning</h2>
+
+      <h3>Hvor nøyaktig er en kaloriberegner?</h3>
+      <p>
+        En kaloriberegner gir et estimat basert på gjennomsnittlige formler.
+        Faktisk forbrenning kan variere, og resultatene bør justeres basert
+        på utvikling over tid.
+      </p>
+
+      <h3>Hvor stort kaloriunderskudd bør jeg ha?</h3>
+      <p>
+        For de fleste fungerer et moderat underskudd på 15–20 % godt.
+        Større underskudd kan føre til raskere vekttap, men øker også risikoen
+        for tap av muskelmasse.
+      </p>
+
+      <h3>Er beregningen forskjellig for menn og kvinner?</h3>
+      <p>
+        Ja. Menn og kvinner har ulikt hvilestoffskifte og hormonell profil.
+        Derfor tar kalkulatoren hensyn til kjønn når kaloriinntak og tempo
+        beregnes.
+      </p>
+
+      <h3>Kan jeg bruke denne kalkulatoren hvis jeg trener styrke?</h3>
+      <p>
+        Ja. Kalkulatoren er laget med tanke på personer som trener styrke,
+        og anbefaler et tempo som reduserer risikoen for muskeltap.
+      </p>
+
+      <h3>Hvor raskt er et realistisk vekttap?</h3>
+      <p>
+        Et bærekraftig tempo er vanligvis rundt 0,5–0,75 % av kroppsvekten
+        per uke for menn, og noe lavere for kvinner.
+      </p>
+    </section>
+
+    <!-- DISCLAIMER -->
+    <section class="disclaimer">
+      <p>
+        Dette er ikke medisinsk rådgivning. Beregningene er estimater og
+        forutsetter at du er frisk.
+      </p>
+    </section>
 
   </main>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
