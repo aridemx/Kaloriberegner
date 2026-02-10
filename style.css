@@ -45,3 +45,12 @@ h1 {
   background: #eef3ff;
   border-radius: 4px;
 }
+
+.faq h3 {
+  margin-top: 20px;
+}
+
+.faq p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
