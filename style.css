@@ -54,3 +54,20 @@ h1 {
   margin-bottom: 10px;
   line-height: 1.5;
 }
+
+.pro-teaser {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f7f9fc;
+  border-radius: 6px;
+}
+
+.pro-teaser ul {
+  margin-left: 20px;
+}
+
+.coming-soon {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #555;
+}
