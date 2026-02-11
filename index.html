@@ -5,23 +5,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Kaloriberegner – realistisk vekttap</title>
-  <meta name="description" content="Kaloriberegner for menn og kvinner. Finn vedlikehold, anbefalt kaloriinntak og realistisk tempo for vekttap.">
+  <title>Kaloriberegner for menn og kvinner – Finn ditt daglige kaloribehov</title>
+
+  <meta name="description" content="Gratis kaloriberegner for menn og kvinner. Finn vedlikeholdsnivå, anbefalt kaloriinntak og realistisk tempo for vekttap basert på alder, vekt og aktivitetsnivå.">
+
+  <link rel="canonical" href="https://kaloriberegner.no/">
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4CCCSBET25"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4CCCSBET25"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4CCCSBET25');
+  </script>
 
-  gtag('config', 'G-4CCCSBET25');
-</script>
-  
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7626118673715235"
-     crossorigin="anonymous"></script>
+  <!-- Google AdSense -->
+  <script async 
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7626118673715235"
+    crossorigin="anonymous"></script>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Hvor nøyaktig er en kaloriberegner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En kaloriberegner gir et estimat basert på anerkjente formler. Faktisk forbrenning kan variere, og tallene bør justeres basert på utvikling over tid."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hvor stort kaloriunderskudd bør jeg ha?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For de fleste fungerer et moderat underskudd på 15–20 prosent godt og gir jevnt og bærekraftig vekttap."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Er beregningen forskjellig for menn og kvinner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Menn og kvinner har ulikt hvilestoffskifte og kroppssammensetning, derfor tar kalkulatoren hensyn til kjønn."
+      }
+    }]
+  }
+  </script>
 </head>
 
 <body>
@@ -29,10 +65,11 @@
 
     <!-- HERO -->
     <section class="hero">
-      <h1>Kaloriberegner – realistisk vekttap</h1>
+      <h1>Kaloriberegner for realistisk og bærekraftig vekttap</h1>
       <p>
-        Denne kaloriberegneren er utviklet for både menn og kvinner som ønsker
-        et realistisk og bærekraftig vekttap basert på kropp, kjønn og aktivitetsnivå.
+        Denne gratis kaloriberegneren hjelper menn og kvinner med å finne
+        daglig kaloribehov, vedlikeholdsnivå og et realistisk tempo for vekttap
+        basert på kropp, kjønn og aktivitetsnivå.
       </p>
     </section>
 
@@ -87,30 +124,30 @@
     <!-- RESULTAT -->
     <section id="resultat"></section>
 
-<section class="pro-teaser">
-  <h2>Vil du ha en konkret plan å følge?</h2>
+    <!-- PRO TEASER -->
+    <section class="pro-teaser">
+      <h2>Vil du ha en konkret plan å følge?</h2>
 
-  <p>
-    Kalkulatoren gir deg tallene. Pro-versjonen gir deg en strukturert
-    uke-for-uke plan som viser nøyaktig hva du bør gjøre for å nå målet ditt.
-  </p>
+      <p>
+        Kalkulatoren gir deg tallene. Pro-versjonen gir deg en strukturert
+        uke-for-uke plan som viser nøyaktig hva du bør gjøre for å nå målet ditt.
+      </p>
 
-  <ul>
-    <li>✔️ Personlig kalori- og proteinmål</li>
-    <li>✔️ Forventet vektutvikling uke for uke</li>
-    <li>✔️ Tydelige råd hvis fremgangen stopper</li>
-    <li>✔️ Realistisk og muskelbevarende tempo</li>
-  </ul>
+      <ul>
+        <li>✔️ Personlig kalori- og proteinmål</li>
+        <li>✔️ Forventet vektutvikling uke for uke</li>
+        <li>✔️ Tydelige råd hvis fremgangen stopper</li>
+        <li>✔️ Realistisk og muskelbevarende tempo</li>
+      </ul>
 
-  <button id="proInterestBtn" class="pro-interest-btn">
-    👉 Jeg vil ha tilgang når Pro lanseres
-  </button>
+      <button id="proInterestBtn" class="pro-interest-btn">
+        👉 Jeg vil ha tilgang når Pro lanseres
+      </button>
 
-  <p class="pro-note">
-    Pro lanseres snart til en fast, lav engangspris.
-  </p>
-</section>
-
+      <p class="pro-note">
+        Pro lanseres snart til en fast, lav engangspris.
+      </p>
+    </section>
 
     <!-- SEO-SEKSJON -->
     <section class="seo">
@@ -118,7 +155,7 @@
       <p>
         En kaloriberegner gir et estimat på hvor mange kalorier kroppen trenger
         for å opprettholde vekten, og hvilket inntak som kan gi et realistisk
-        vekttap over tid. Tallene bør brukes som veiledning, og justeres basert
+        vekttap over tid. Tallene bør brukes som veiledning og justeres basert
         på faktisk fremgang.
       </p>
     </section>
@@ -143,7 +180,7 @@
 
       <h3>Er beregningen forskjellig for menn og kvinner?</h3>
       <p>
-        Ja. Menn og kvinner har ulikt hvilestoffskifte og hormonell profil.
+        Ja. Menn og kvinner har ulikt hvilestoffskifte og kroppssammensetning.
         Derfor tar kalkulatoren hensyn til kjønn når kaloriinntak og tempo
         beregnes.
       </p>
@@ -168,22 +205,16 @@
         forutsetter at du er frisk.
       </p>
     </section>
-<footer>
-  <p>
-    <a href="personvern.html">Personvernerklæring</a> |
-    <a href="kontakt.html">Kontakt</a>
-  </p>
-</footer>
-    
+
+    <footer>
+      <p>
+        <a href="personvern.html">Personvernerklæring</a> |
+        <a href="kontakt.html">Kontakt</a>
+      </p>
+    </footer>
+
   </main>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
