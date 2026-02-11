@@ -50,3 +50,21 @@ function kalkuler() {
     </p>
   `;
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("proInterestBtn");
+
+  if (btn) {
+    btn.addEventListener("click", function () {
+
+      if (typeof gtag === "function") {
+        gtag("event", "pro_interest_click", {
+          event_category: "engagement",
+          event_label: "Pro teaser click"
+        });
+      }
+
+      alert("Pro-versjonen lanseres snart 🚀");
+    });
+  }
+});
