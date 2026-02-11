@@ -86,3 +86,9 @@ h1 {
 .pro-interest-btn:hover {
   opacity: 0.9;
 }
+
+.pro-note {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
